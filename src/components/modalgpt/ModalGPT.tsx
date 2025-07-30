@@ -20,8 +20,8 @@ export function ModalGPT({
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-9999 flex justify-center items-center">
-      <div className="bg-white w-full max-w-4xl h-[70rem] rounded-2xl p-8 shadow-lg relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className="relative flex flex-col w-full max-w-4xl max-h-[90vh] bg-white rounded-2xl p-8 shadow-lg">
         <button
           className="absolute top-2 right-2 text-xl text-gray cursor-pointer"
           onClick={fechar}
@@ -30,7 +30,7 @@ export function ModalGPT({
         </button>
 
         <p
-          className="bg-modal-bg rounded-2xl p-4 text-[1.4rem] h-[95%] overflow-y-auto"
+          className="flex-1 overflow-y-auto bg-modal-bg rounded-2xl p-4 text-[1.4rem]"
           dangerouslySetInnerHTML={{ __html: formatarTextoMarkdown(resposta) }}
         />
 

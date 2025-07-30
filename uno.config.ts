@@ -43,5 +43,15 @@ export default defineConfig({
       "2xl": "1536px",
     },
   },
+  safelist: [
+    "w-full",
+    "max-w-full",
+    "min-w-0",
+    "overflow-hidden",
+    "overflow-x-auto",
+    "flex-1",
+    "h-full",
+    "min-h-screen",
+  ],
   presets: [presetUno(), presetAttributify(), presetIcons()],
 });

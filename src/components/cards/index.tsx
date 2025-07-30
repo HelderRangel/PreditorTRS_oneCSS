@@ -13,18 +13,15 @@ export function CardComponent({ Value, Text, Icon, Unidade }: CardProps) {
   return (
     <div
       className="
-        w-full 
-        h-[12.4%] 
-        p-4 
-        rounded-3xl 
-        cursor-pointer 
+        w-full
+        p-4
+        rounded-3xl
+        cursor-pointer
         flex items-center gap-2
-        shadow 
-        hover:shadow-lg 
-        bg-white
-        transition-all
-        md:justify-center 
-        md:h-auto 
+        shadow
+        hover:shadow-lg
+        md:justify-center
+        min-h-[9rem]
         max-h-[25vh]
         mb-1
       "
@@ -36,10 +33,10 @@ export function CardComponent({ Value, Text, Icon, Unidade }: CardProps) {
       <div
         className="
           flex flex-col items-center justify-center gap-2
-          h-[10rem] w-[20rem]
+          w-full
+          min-h-[8rem]
           pr-2 mr-2
           text-text-dark
-          md:w-full 
           md:text-[2.5rem]
         "
       >
